@@ -1,0 +1,396 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="en">
+
+<head>
+    <title>Rooms & Villa - The Sentosa Villa</title>
+    <meta charset="utf-8">
+    <meta name="keywords" content="sentosa villa, Sentosa Villa, the sentosa villa, The Sentosa Villa, the sentosa villa goa, The Sentosa Villa Goa, the sentosa villa north goa, The Sentosa Villa North Goa" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css"/>
+    <link rel="stylesheet" href="css/magic.css"/>
+    <script
+      src="https://kit.fontawesome.com/f3c3379fd7.js"
+      crossorigin="anonymous"
+    ></script>
+</head>
+
+
+<body>
+    <div id="loader" class="center"></div> 
+    <!-- menu start -->
+    <nav class="navbar navbar-expand-lg fixed-top  navbar-inverse" id="nav">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Logo</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="home.html">Rooms</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <!-- menu end -->
+
+     <!-- home slider start -->
+     <header>
+        <div id="carouselRoomIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselRoomIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselRoomIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselRoomIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+                <!-- Slide One - Set the background image for this slide in the line below -->
+                <div class="carousel-item active" style="background-image: url('images/room-standard.JPG') ">
+                <div class="carousel-caption d-md-block">
+                    <h2 class="display-4">Standard</h2>
+                    <p class="lead">Our lavish offering for you to enhance your overall experience</p>
+                    <a href="#room" class="text-white"><i class="fas fa-long-arrow-alt-down bounce"></i></a>
+                </div>
+            </div>
+            <!-- Slide Two - Set the background image for this slide in the line below -->
+            <div class="carousel-item" style="background-image: url('images/room-deluxe-2.JPG')">
+                <div class="carousel-caption d-md-block">
+                    <h2 class="display-4">Deluxe</h2>
+                    <p class="lead">Rooms for everybody</p>
+                    <a href="#room" class="text-white"><i class="fas fa-long-arrow-alt-down bounce"></i></a>
+                </div>
+            </div>
+            <!-- Slide Three - Set the background image for this slide in the line below -->
+            <div class="carousel-item" style="background-image: url('images/room-premium.JPG')">
+                <div class="carousel-caption d-md-block">
+                    <h2 class="display-4">Premium</h2>
+                    <p class="lead">Luxurious Rooms</p>
+                    <a href="#room" class="text-white"><i class="fas fa-long-arrow-alt-down bounce"></i></a>
+                </div>
+            </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselRoomIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselRoomIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </header>
+    <!-- home slider start -->
+
+    <!-- room section start -->
+    <section id="room" class="m-4">
+        <h1 class="mt-5 mb-5 text-center pt-5 pb-5"><span>Rooms & Villas</span></h1>
+        <div class="container-fluid">
+            <div class="row mt-5 mb-5">
+                <div class="col-lg-6">
+                    <div id="carouselStandardRoomIndicators" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselStandardRoomIndicators" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselStandardRoomIndicators" data-slide-to="1"></li>
+                            <li data-target="#carouselStandardRoomIndicators" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner" role="listbox">
+                            <!-- Slide One - Set the background image for this slide in the line below -->
+                            <div class="carousel-item active" style="background-image: url('images/room-standard.JPG');" onclick="openImage('images/room-standard.JPG')">
+                        </div>
+                        <!-- Slide Two - Set the background image for this slide in the line below -->
+                        <div class="carousel-item" style="background-image: url('images/common-lr.JPG');" onclick="openImage('images/common-lr.JPG')">
+                        </div>
+                        <!-- Slide Three - Set the background image for this slide in the line below -->
+                        <div class="carousel-item" style="background-image: url('images/common-k.JPG');" onclick="openImage('images/common-k.JPG')">
+                        </div>
+                        </div>
+                        <!-- <a class="carousel-control-prev" href="#carouselStandardRoomIndicators" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselStandardRoomIndicators" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a> -->
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <h2 class="mt-5"><span>Standard Room</span></h2>
+                    <h5 class="text-secondary mt-3">
+                        Deluxe Room is a mid size room giving the best of both the worlds with beautiful interior furnishing and access to all the amenities available.
+                        All the Deluxe Rooms have a King size bed, Air-Condition, Television, attached bathroom and many other facilities that will enhance your overall experience of the stay.<br><br>
+                        <b>CHECK IN: 12 PM | CHECK OUT: 10 AM</b>
+                    </h5>
+                    <div class="row mt-3">
+                        <div class="col-lg-6">
+                            <h5 class="text-secondary">
+                                <i class="fas fa-user-friends"></i> 2 Guests
+                            </h5>
+                        </div>
+                        <div class="col-lg-6">
+                            <h5 class="text-secondary">
+                                <i class="fas fa-bed"></i> King Size Bed
+                            </h5>
+                        </div>
+                        <div class="col-12 mt-3">
+                            <button onclick="bookNow()" class="btn btn-outline-primary">Book Now <i class="fas fa-angle-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-5 mb-5">
+                <div class="col-lg-6">
+                    <div id="carouselDeluxeRoomIndicators" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselDeluxeRoomIndicators" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselDeluxeRoomIndicators" data-slide-to="1"></li>
+                            <li data-target="#carouselDeluxeRoomIndicators" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner" role="listbox">
+                            <!-- Slide One - Set the background image for this slide in the line below -->
+                            <div class="carousel-item active" style="background-image: url('images/room-deluxe-2.JPG');" onclick="openImage('images/room-deluxe-2.JPG')">
+                        </div>
+                        <!-- Slide Two - Set the background image for this slide in the line below -->
+                        <div class="carousel-item" style="background-image: url('images/common-lr-2.JPG');" onclick="openImage('images/common-lr-2.JPG')">
+                        </div>
+                        <!-- Slide Three - Set the background image for this slide in the line below -->
+                        <div class="carousel-item" style="background-image: url('images/381A0515-6.JPG');" onclick="openImage('images/381A0515-6.JPG')">
+                        </div>
+                        </div>
+                        <!-- <a class="carousel-control-prev" href="#carouselDeluxeRoomIndicators" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselDeluxeRoomIndicators" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a> -->
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <h2 class="mt-5"><span>Deluxe  Room</span></h2>
+                    <h5 class="text-secondary mt-3">
+                        Deluxe Room is a mid size room giving the best of both the worlds with beautiful interior furnishing and access to all the amenities available.
+                        All the Deluxe Rooms have a King size bed, Air-Condition, Television, attached bathroom and many other facilities that will enhance your overall experience of the stay.<br><br>
+                        <b>CHECK IN: 12 PM | CHECK OUT: 10 AM</b>
+                    </h5>
+                    <div class="row mt-3">
+                        <div class="col-lg-6">
+                            <h5 class="text-secondary">
+                                <i class="fas fa-user-friends"></i> 2 Guests
+                            </h5>
+                        </div>
+                        <div class="col-lg-6">
+                            <h5 class="text-secondary">
+                                <i class="fas fa-bed"></i> King Size Bed
+                            </h5>
+                        </div>
+                        <div class="col-12 mt-3">
+                            <button onclick="bookNow()" class="btn btn-outline-primary">Book Now <i class="fas fa-angle-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-5 mb-5">
+                <div class="col-lg-6">
+                    <div id="carouselPreRoomIndicators" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselPreRoomIndicators" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselPreRoomIndicators" data-slide-to="1"></li>
+                            <li data-target="#carouselPreRoomIndicators" data-slide-to="2"></li>
+                            <li data-target="#carouselPreRoomIndicators" data-slide-to="3"></li>
+                            <li data-target="#carouselPreRoomIndicators" data-slide-to="4"></li>
+                        </ol>
+                        <div class="carousel-inner" role="listbox">
+                            <!-- Slide One - Set the background image for this slide in the line below -->
+                        <div class="carousel-item active" style="background-image: url('images/room-premium.JPG');" onclick="openImage('images/room-premium.JPG')">
+                        </div>
+                        <div class="carousel-item" style="background-image: url('images/pre-1.jpg');" onclick="openImage('images/pre-1.JPG')">
+                        </div>
+                        <div class="carousel-item" style="background-image: url('images/pre-2.jpg');" onclick="openImage('images/pre-2.JPG')">
+                        </div>
+                        <!-- Slide Two - Set the background image for this slide in the line below -->
+                        <div class="carousel-item" style="background-image: url('images/common-lr.JPG');" onclick="openImage('images/common-lr.JPG')">
+                        </div>
+                        <!-- Slide Three - Set the background image for this slide in the line below -->
+                        <div class="carousel-item" style="background-image: url('images/gallery-10.jpg');" onclick="openImage('images/gallery-10.JPG')">
+                        </div>
+                        </div>
+                        <!-- <a class="carousel-control-prev" href="#carouselPreRoomIndicators" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselPreRoomIndicators" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a> -->
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <h2 class="mt-5"><span>Premium  Room</span></h2>
+                    <h5 class="text-secondary mt-3">
+                        Premium room is the biggest of all the rooms with front facing balcony and furnished with beautiful interiors.
+                        All the Premium rooms have a King size bed, Air-Condition, Television, attached bathroom and many other facilities that will enhance your overall experience of the stay.<br><br>
+                        <b>CHECK IN: 12 PM | CHECK OUT: 10 AM</b>
+                    </h5>
+                    <div class="row mt-3">
+                        <div class="col-lg-6">
+                            <h5 class="text-secondary">
+                                <i class="fas fa-user-friends"></i> 2 Guests
+                            </h5>
+                        </div>
+                        <div class="col-lg-6">
+                            <h5 class="text-secondary">
+                                <i class="fas fa-bed"></i> King Size Bed
+                            </h5>
+                        </div>
+                        <div class="col-12 mt-3">
+                            <button onclick="bookNow()" class="btn btn-outline-primary">Book Now <i class="fas fa-angle-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-5 mb-5">
+                <div class="col-lg-6">
+                    <div id="carouselVillaRoomIndicators" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselVillaRoomIndicators" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselVillaRoomIndicators" data-slide-to="1"></li>
+                            <li data-target="#carouselVillaRoomIndicators" data-slide-to="2"></li>
+                            <li data-target="#carouselVillaRoomIndicators" data-slide-to="3"></li>
+                            <li data-target="#carouselVillaRoomIndicators" data-slide-to="4"></li>
+                        </ol>
+                        <div class="carousel-inner" role="listbox">
+                            <!-- Slide One - Set the background image for this slide in the line below -->
+                        <div class="carousel-item active" style="background-image: url('images/villa-1.jpg');" onclick="openImage('images/villa-1.JPG')">
+                        </div>
+                        <div class="carousel-item" style="background-image: url('images/villa-2.jpg');" onclick="openImage('images/villa-2.JPG')">
+                        </div>
+                        <div class="carousel-item" style="background-image: url('images/room-deluxe.JPG');" onclick="openImage('images/room-deluxe.JPG')">
+                        </div>
+                        <!-- Slide Two - Set the background image for this slide in the line below -->
+                        <div class="carousel-item" style="background-image: url('images/common-lr-2.JPG');" onclick="openImage('images/common-lr-2.JPG')">
+                        </div>
+                        <div class="carousel-item" style="background-image: url('images/common-k.JPG');" onclick="openImage('images/common-k.JPG')">
+                        </div>
+                        </div>
+                        <!-- <a class="carousel-control-prev" href="#carouselVillaRoomIndicators" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselVillaRoomIndicators" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a> -->
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <h2 class="mt-5"><span>Villa</span></h2>
+                    <h5 class="text-secondary mt-3">
+                        Standard, Deluxe and Premium Room all together comprises of a Villa. When you book a complete Villa, you gain access to all the 3 rooms along with <b>Personal Drawing Room and Kitchen</b>. Each Villa has beautifully furnished interiors with all the basic facilities required.
+                        All the rooms have a King size bed, Air-Condition, Television, attached bathroom and many other facilities that will enhance your overall experience of the stay.<br><br>
+                        <b>CHECK IN: 12 PM | CHECK OUT: 10 AM</b>
+                    </h5>
+                    <div class="row mt-3">
+                        <div class="col-lg-6">
+                            <h5 class="text-secondary">
+                                <i class="fas fa-user-friends"></i> 7 Guests
+                            </h5>
+                        </div>
+                        <div class="col-lg-6">
+                            <h5 class="text-secondary">
+                                <i class="fas fa-wind"></i> Fully Air-Conditioned
+                            </h5>
+                        </div>
+                        <div class="col-12 mt-3">
+                            <button onclick="bookNow()" class="btn btn-outline-primary">Book Now <i class="fas fa-angle-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- room section end -->
+
+    <!-- footer section start -->
+    <footer class="bg-dark">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-3 text-center">
+                    <h3 class=" mt-5 text-white"><span>Address</span></h3>
+                    <hr class="light">
+                    <p class="text-white">
+                        Socorro, Vaddem, Bardez<br>
+                        Post Porvorim, Goa.<br>
+                        403501
+                    </p>
+                </div>
+                <div class="col-lg-3 text-center">
+                    <h3 class="mt-5 text-white"><span>Contact Info</span></h3>
+                    <hr class="light">
+                    <a class="btn btn-dark" target="_blank" href="mailto:info@thesentosavilla.com"><i class="fas fa-envelope-open-text"></i> <span>info@thesentosavilla.com</span></a><br>
+                    <a class="btn btn-dark" target="_blank" href="tel:9727099969"><i class="fas fa-mobile-alt"></i> <span>+91 97270 99969</span></a>
+                    <a class="btn btn-dark" target="_blank" href="tel:9638699969"><i class="fas fa-mobile-alt"></i> <span>+91 96386 99969</span></a><br>
+                    <a class="btn btn-dark" target="_blank" href="https://goo.gl/maps/UZ6PFdAjZTDwX86b7"><i class="fa fa-map-o"></i> <span>Location</span></a>
+                </div>
+                <div class="col-lg-3 text-center">
+                    <h3 class="mt-5 text-white"><span>Connect with Us</span></h3>
+                    <hr class="light">
+                    <div class="soc-widget">
+                        <a target="_blank" href="https://facebook.com/thesentosavilla.goa"><i class="fa fa-facebook"></i></a>
+                        <a target="_blank" href="https://instagram.com/thesentosavilla.goa"><i class="fa fa-instagram"></i></a>
+                        <a target="_blank" href="mailto:info@thesentosavilla.com"><i class="fa fa-envelope-open-o"></i></a>           			
+                    </div>
+                </div>
+                <div class="col-lg-3 text-center">
+                    <h3 class="mt-5 text-white"><span>Payment Accepted</span></h3>
+                    <hr class="light">
+                    <div class="th-payments-widget mt-3">
+                        <a target="_blank" href="https://visa.com">
+                            <img alt="Visa" width="100" height="60" data-src="images/visa.png" src="images/visa.png">
+                        </a>
+                        <a target="_blank" href="https://mastercard.com">
+                            <img alt="MasterCard" width="100" height="60" data-src="images/mastercard.png" src="images/mastercard.png">
+                        </a>
+                        <a target="_blank" href="https://pay.google.com/">
+                            <img alt="Google Pay" width="100" height="56" data-src="images/googlepay.png" src="images/googlepay.png">
+                        </a>
+                        <a target="_blank" href="https://paytm.com/">
+                            <img alt="Paytm" width="150" height="50" data-src="images/paytm.png" src="images/paytm.png">
+                        </a>				
+                    </div>
+                </div>
+                <div class="col-12 mt-5">
+                    <hr class="light mb-3">
+                    <p class="text-center text-white"><span>© 2020 <a href="http://thesentosavilla.com" class="">The Sentosa Villa</a> | All Rights Reserved</span> - <span>Developed by <a href="https://manthanbhatt.github.io/" target="_blank">Manthan Bhatt</a></span></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer section end -->
+
+    <a id="button" class="shadow-lg"></a>
+
+</body>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <script src="js/magicpopup.js"></script>
+    <script src="js/main.js"></script>
+</html>
