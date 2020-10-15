@@ -1,3 +1,15 @@
+document.onreadystatechange = function () {
+    if (document.readyState !== "complete") {
+        document.querySelector("body").style.visibility = "hidden";
+        document.querySelector("#loader").style.visibility = "visible";
+    } else {
+        setTimeout(() => {
+            document.querySelector("#loader").style.display = "none";
+            document.querySelector("body").style.visibility = "visible";
+        }, 500);
+    }
+};
+
 $(window).scroll(function () {
     if ($(document).scrollTop() > 50) {
         $('nav').addClass('transparent');
@@ -104,7 +116,7 @@ let saveEnquiry = () => {
 
     $('#booking-btn-text').hide();
     $('#booking-btn').prop('disabled',true);
-    $('.spinner-grow').show();
+    $('#spinner-grow').show();
     $.ajax({
         type: "POST",
         url: "http://localhost/sentosa_villa/service/mail-service.php",
@@ -124,33 +136,20 @@ let saveEnquiry = () => {
             $('#booking-success').show(300);
             $('#booking-btn-text').show();
             $('#booking-btn').prop('disabled',false);
-            $('.spinner-grow').hide();
+            $('#spinner-grow').hide();
         },
         error: (err) => {
             console.log('error');
             console.log(err);
             $('#booking-btn-text').show();
             $('#booking-btn').prop('disabled',false);
-            $('.spinner-grow').hide();
+            $('#spinner-grow').hide();
         }
     });
 }
 
 $('#booking-success').hide();
-$('.spinner-grow').hide();
-
-
-document.onreadystatechange = function () {
-    if (document.readyState !== "complete") {
-        document.querySelector("body").style.visibility = "hidden";
-        document.querySelector("#loader").style.visibility = "visible";
-    } else {
-        setTimeout(() => {
-            document.querySelector("#loader").style.display = "none";
-            document.querySelector("body").style.visibility = "visible";
-        }, 500);
-    }
-};
+$('#spinner-grow').hide();
 
 var btn = $('#button');
 
@@ -166,4 +165,5 @@ btn.on('click', function(e) {
   e.preventDefault();
   $('html, body').animate({scrollTop:0}, '300');
 });
+
 
