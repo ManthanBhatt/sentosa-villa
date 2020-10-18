@@ -34,7 +34,7 @@ nav.navbar {
   color: white !important;
 }
 
-.navbar-inverse .active {
+.navbar-inverse .active a span {
   border-bottom: 1px solid;
   border-bottom-color: white !important;
   font-weight: bolder;
@@ -53,9 +53,9 @@ nav.navbar.transparent a {
   color: black !important;
 }
 
-nav.navbar.transparent .active {
+nav.navbar.transparent .active a span {
   border-bottom: 1px solid;
-  border-bottom-color: steelblue !important;
+  border-bottom-color: #079ea5 !important;
   font-weight: bolder;
 }
 
@@ -87,7 +87,7 @@ nav.navbar.transparent .active {
 
 #hotel-feature .card .fas {
   font-size: 50px;
-  color: #17A2B8;
+  color: #079ea5;
 }
 
 h1 span {
@@ -106,15 +106,16 @@ h1 span {
 }
 
 .bg-transparent {
-  background: transparent;
+  background-color: rgba(0, 0, 0, 0.5) !important;
+  border-radius: 10px;
 }
 
 #loader {
-  border: 5px solid #f3f3f3;
+  border: 8px solid #d6d6d6;
   border-radius: 50%;
-  border-top: 5px solid #00aeff;
-  width: 100px;
-  height: 100px;
+  border-top: 8px solid #079ea5;
+  width: 150px;
+  height: 150px;
   animation: spin 1s linear infinite;
 }
 
@@ -266,9 +267,13 @@ hr.light {
   }
 }
 
-#location iframe{
-  margin-top: 16px;
-  height: 550px;
+#location iframe {
+  height: 500px;
+}
+
+#location {
+  margin: 0px !important;
+  padding: 0px !important;
 }
 
 .accordion .card {
@@ -277,7 +282,7 @@ hr.light {
 
 #button {
   display: inline-block;
-  background-color: #FF9800;
+  background-color: #079ea5;
   width: 50px;
   height: 50px;
   text-align: center;
@@ -285,8 +290,7 @@ hr.light {
   position: fixed;
   bottom: 30px;
   right: 30px;
-  transition: background-color .3s, 
-    opacity .5s, visibility .5s;
+  transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
   opacity: 0;
   visibility: hidden;
   z-index: 1000;
@@ -312,4 +316,55 @@ hr.light {
   visibility: visible;
 }
 
+.i4ewOd-pzNkMb-r4nke-LS81yb {
+  display: none !important;
+}
 
+.text-base {
+  color: #079ea5;
+}
+
+.bg-base {
+  background-color: #079ea5;
+}
+
+.outline-base {
+  border-color: #079ea5;
+  border-radius: 30px;
+}
+
+.outline-base:hover {
+  background-color: #079ea5;
+  color: white;
+}
+
+.enquiry .far {
+  font-size: 10rem;
+}
+
+.bg-image {
+  background-image: url("../images/room-deluxe-2.JPG");
+  height: 100%;
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.book-panel .card {
+  border: none;
+}
+
+.col-lg-2 .fas {
+  font-size: 5rem;
+}
+
+.col-lg-2 .far {
+  font-size: 5rem;
+}
+
+.nav-item:hover {
+  font-weight: bolder;
+  background-color: rgba(7, 158, 165, 0.25) !important;
+}

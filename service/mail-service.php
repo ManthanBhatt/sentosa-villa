@@ -21,17 +21,16 @@ if (!isset($request->type)) {
 }
 
 $to = "info@thesentosavilla.com";
-$subject = $request->type == "booking" ? "Booking Enquiry " . date("Y-m-d H:i:s") . " From " . $request->name : $request->type;
+$subject = $request->type == "booking" ? "Booking Enquiry " . date("Y-m-d H:i:s") . " From " . $request->name : $request->subject;
 
 if ($request->type == "booking") {
     $txt = "Booking Enquiry from " . $request->name . " below are the details \n Name: " . $request->name . " \n Email: " . $request->email . " \n Mobile Number: " . $request->mobileNumber . " \n Guest: " . $request->guest . " \n Accommodation Type: " . $request->accommodation . " \n Message: " . $request->message;
 } else {
-    $txt = "Booking Enquiry from " . $request->name . " below are the details \n Name: " . $request->name . " \n Email: " . $request->email . " \n Mobile Number: " . $request->mobileNumber . " \n Guest: " . $request->guest . " \n Accommodation Type: " . $request->accommodation . " \n Message: " . $request->message;
+    $txt = "Enquiry from " . $request->name . " below are the details \n Name: " . $request->name . " \n Email: " . $request->email . " \n Mobile Number: " . " \n Message: " . $request->message;
 }
 
 try {
     mail($to, $subject, $txt);
-
     echo json_encode(["status" => 200, "message" => "Thank you for enquiry, Our executive will call you shortly."]);
 } catch (Exception $e) {
     echo json_encode(["status" => 500, "message" => "Internal Error", "exception" => $e]);
