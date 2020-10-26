@@ -107,7 +107,7 @@ h1 span {
 }
 
 .parallax {
-  background-image: url("../images/compressed/slider-1.JPG");
+  background-image: url("../images/food/6.jpg");
 
   height: 100%;
 
@@ -115,6 +115,25 @@ h1 span {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.parallax .card{
+  height: 400px;
+}
+
+.parallax-food {
+  background-image: url("../images/food/1.jpg");
+
+  height: 100%;
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax-food .card{
+  height: 400px;
 }
 
 .bg-transparent {
