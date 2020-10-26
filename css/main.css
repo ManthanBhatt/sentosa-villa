@@ -136,6 +136,21 @@ h1 span {
   height: 400px;
 }
 
+.parallax-food-banner {
+  background-image: url("../images/food/2.jpg");
+
+  height: 100%;
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax-food-banner .card{
+  height: 400px;
+}
+
 .bg-transparent {
   background-color: rgba(0, 0, 0, 0.5) !important;
   border-radius: 10px;
