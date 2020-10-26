@@ -26,8 +26,14 @@ nav.navbar {
 }
 
 .navbar-inverse {
-  background-color: rgba(0, 0, 0, 0.25);
+  background-color: transparent;
   border-color: white;
+}
+
+.navbar-inverse .nav-item {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+  margin: 2px;
 }
 
 .navbar-inverse a {
@@ -47,6 +53,12 @@ nav.navbar {
 nav.navbar.transparent {
   background-color: white;
   color: black !important;
+}
+
+nav.navbar.transparent .nav-item{
+  background-color: transparent;
+  border-radius: none;
+  margin: 0px;
 }
 
 nav.navbar.transparent a {
@@ -95,7 +107,7 @@ h1 span {
 }
 
 .parallax {
-  background-image: url("../images/parallex.JPG");
+  background-image: url("../images/compressed/slider-1.JPG");
 
   height: 100%;
 
@@ -343,7 +355,7 @@ hr.light {
 }
 
 .bg-image {
-  background-image: url("../images/room-deluxe-2.JPG");
+  background-image: url("../images/compressed/delux-2.jpg");
   height: 100%;
 
   background-attachment: fixed;

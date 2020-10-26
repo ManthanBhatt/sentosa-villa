@@ -18,7 +18,7 @@
 <body>
     <div id="loader" class="center"></div> 
     <!-- menu start -->
-    <nav class="navbar navbar-expand-lg fixed-top  navbar-inverse shadow-lg" id="nav">
+    <nav class="navbar navbar-expand-lg fixed-top  navbar-inverse" id="nav">
         <div class="container-fluid">
           <a class="navbar-brand" href="#"><img src="images/logo.png" width="80" height="60"/></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -26,15 +26,18 @@
             </button>
           <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="index.html"><span>Home</span></a>
-              </li>
-              <li class="nav-item active">
-                <a class="nav-link" href="room.html"><span>Rooms</span></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contact.html"><span>Contact</span></a>
-              </li>
+                <li class="nav-item text-center">
+                    <a class="nav-link" href="index.html"><span>Home</span></a>
+                </li>
+                <li class="nav-item text-center active">
+                    <a class="nav-link" href="room.html"><span>Rooms</span></a>
+                </li>
+                <li class="nav-item text-center">
+                    <a class="nav-link" href="gallery.html"><span>Gallery</span></a>
+                </li>
+                <li class="nav-item text-center">
+                    <a class="nav-link" href="contact.html"><span>Contact</span></a>
+                </li>
             </ul>
           </div>
         </div>
@@ -51,7 +54,7 @@
             </ol>
             <div class="carousel-inner" role="listbox">
                 <!-- Slide One - Set the background image for this slide in the line below -->
-                <div class="carousel-item active" style="background-image: url('images/room-standard.JPG') ">
+                <div class="carousel-item active" style="background-image: url('images/compressed/standard.JPG') ">
                 <div class="carousel-caption d-md-block">
                     <h2 class="display-4">Standard</h2>
                     <p class="lead">Our lavish offering for you to enhance your overall experience</p>
@@ -59,7 +62,7 @@
                 </div>
             </div>
             <!-- Slide Two - Set the background image for this slide in the line below -->
-            <div class="carousel-item" style="background-image: url('images/room-deluxe-2.JPG')">
+            <div class="carousel-item" style="background-image: url('images/compressed/delux-2.jpg')">
                 <div class="carousel-caption d-md-block">
                     <h2 class="display-4">Deluxe</h2>
                     <p class="lead">Rooms for everybody</p>
@@ -67,7 +70,7 @@
                 </div>
             </div>
             <!-- Slide Three - Set the background image for this slide in the line below -->
-            <div class="carousel-item" style="background-image: url('images/room-premium.JPG')">
+            <div class="carousel-item" style="background-image: url('images/compressed/premium.JPG')">
                 <div class="carousel-caption d-md-block">
                     <h2 class="display-4">Premium</h2>
                     <p class="lead">Luxurious Rooms</p>
@@ -96,28 +99,12 @@
                     <div id="carouselStandardRoomIndicators" class="carousel slide" data-ride="carousel">
                         <ol class="carousel-indicators">
                             <li data-target="#carouselStandardRoomIndicators" data-slide-to="0" class="active"></li>
-                            <li data-target="#carouselStandardRoomIndicators" data-slide-to="1"></li>
-                            <li data-target="#carouselStandardRoomIndicators" data-slide-to="2"></li>
                         </ol>
                         <div class="carousel-inner" role="listbox">
                             <!-- Slide One - Set the background image for this slide in the line below -->
-                            <div class="carousel-item active" style="background-image: url('images/room-standard.JPG');" onclick="openImage('images/room-standard.JPG')">
-                        </div>
-                        <!-- Slide Two - Set the background image for this slide in the line below -->
-                        <div class="carousel-item" style="background-image: url('images/common-lr.JPG');" onclick="openImage('images/common-lr.JPG')">
-                        </div>
-                        <!-- Slide Three - Set the background image for this slide in the line below -->
-                        <div class="carousel-item" style="background-image: url('images/common-k.JPG');" onclick="openImage('images/common-k.JPG')">
+                            <div class="carousel-item active" style="background-image: url('images/compressed/standard.JPG');" onclick="openImage('images/compressed/standard.JPG')">
                         </div>
                         </div>
-                        <!-- <a class="carousel-control-prev" href="#carouselStandardRoomIndicators" role="button" data-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Previous</span>
-                        </a>
-                        <a class="carousel-control-next" href="#carouselStandardRoomIndicators" role="button" data-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Next</span>
-                        </a> -->
                     </div>
                 </div>
                 <div class="col-lg-6">
@@ -139,28 +126,11 @@
                     <div id="carouselDeluxeRoomIndicators" class="carousel slide" data-ride="carousel">
                         <ol class="carousel-indicators">
                             <li data-target="#carouselDeluxeRoomIndicators" data-slide-to="0" class="active"></li>
-                            <li data-target="#carouselDeluxeRoomIndicators" data-slide-to="1"></li>
-                            <li data-target="#carouselDeluxeRoomIndicators" data-slide-to="2"></li>
                         </ol>
                         <div class="carousel-inner" role="listbox">
-                            <!-- Slide One - Set the background image for this slide in the line below -->
-                            <div class="carousel-item active" style="background-image: url('images/room-deluxe-2.JPG');" onclick="openImage('images/room-deluxe-2.JPG')">
-                        </div>
-                        <!-- Slide Two - Set the background image for this slide in the line below -->
-                        <div class="carousel-item" style="background-image: url('images/common-lr-2.JPG');" onclick="openImage('images/common-lr-2.JPG')">
-                        </div>
-                        <!-- Slide Three - Set the background image for this slide in the line below -->
-                        <div class="carousel-item" style="background-image: url('images/381A0515-6.JPG');" onclick="openImage('images/381A0515-6.JPG')">
+                        <div class="carousel-item active" style="background-image: url('images/compressed/delux.JPG');" onclick="openImage('images/compressed/delux.JPG')">
                         </div>
                         </div>
-                        <!-- <a class="carousel-control-prev" href="#carouselDeluxeRoomIndicators" role="button" data-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Previous</span>
-                        </a>
-                        <a class="carousel-control-next" href="#carouselDeluxeRoomIndicators" role="button" data-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Next</span>
-                        </a> -->
                     </div>
                 </div>
                 <div class="col-lg-6">
@@ -182,34 +152,13 @@
                     <div id="carouselPreRoomIndicators" class="carousel slide" data-ride="carousel">
                         <ol class="carousel-indicators">
                             <li data-target="#carouselPreRoomIndicators" data-slide-to="0" class="active"></li>
-                            <li data-target="#carouselPreRoomIndicators" data-slide-to="1"></li>
-                            <li data-target="#carouselPreRoomIndicators" data-slide-to="2"></li>
-                            <li data-target="#carouselPreRoomIndicators" data-slide-to="3"></li>
-                            <li data-target="#carouselPreRoomIndicators" data-slide-to="4"></li>
+                            
                         </ol>
                         <div class="carousel-inner" role="listbox">
                             <!-- Slide One - Set the background image for this slide in the line below -->
-                        <div class="carousel-item active" style="background-image: url('images/room-premium.JPG');" onclick="openImage('images/room-premium.JPG')">
-                        </div>
-                        <div class="carousel-item" style="background-image: url('images/pre-1.jpg');" onclick="openImage('images/pre-1.JPG')">
-                        </div>
-                        <div class="carousel-item" style="background-image: url('images/pre-2.jpg');" onclick="openImage('images/pre-2.JPG')">
-                        </div>
-                        <!-- Slide Two - Set the background image for this slide in the line below -->
-                        <div class="carousel-item" style="background-image: url('images/common-lr.JPG');" onclick="openImage('images/common-lr.JPG')">
-                        </div>
-                        <!-- Slide Three - Set the background image for this slide in the line below -->
-                        <div class="carousel-item" style="background-image: url('images/gallery-10.jpg');" onclick="openImage('images/gallery-10.JPG')">
+                        <div class="carousel-item active" style="background-image: url('images/compressed/premium.JPG');" onclick="openImage('images/compressed/premium.JPG')">
                         </div>
                         </div>
-                        <!-- <a class="carousel-control-prev" href="#carouselPreRoomIndicators" role="button" data-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Previous</span>
-                        </a>
-                        <a class="carousel-control-next" href="#carouselPreRoomIndicators" role="button" data-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Next</span>
-                        </a> -->
                     </div>
                 </div>
                 <div class="col-lg-6">
@@ -239,16 +188,16 @@
                         </ol>
                         <div class="carousel-inner" role="listbox">
                             <!-- Slide One - Set the background image for this slide in the line below -->
-                        <div class="carousel-item active" style="background-image: url('images/villa-1.jpg');" onclick="openImage('images/villa-1.JPG')">
+                        <div class="carousel-item active" style="background-image: url('images/compressed/gallery-villa-1.JPG');" onclick="openImage('images/compressed/gallery-villa-1.JPG')">
                         </div>
-                        <div class="carousel-item" style="background-image: url('images/villa-2.jpg');" onclick="openImage('images/villa-2.JPG')">
+                        <div class="carousel-item" style="background-image: url('images/compressed/gallery-villa.JPG');" onclick="openImage('images/compressed/gallery-villa.JPG')">
                         </div>
-                        <div class="carousel-item" style="background-image: url('images/room-deluxe.JPG');" onclick="openImage('images/room-deluxe.JPG')">
+                        <div class="carousel-item" style="background-image: url('images/compressed/galler-villa-6.JPG');" onclick="openImage('images/compressed/galler-villa-6.JPG')">
                         </div>
                         <!-- Slide Two - Set the background image for this slide in the line below -->
-                        <div class="carousel-item" style="background-image: url('images/common-lr-2.JPG');" onclick="openImage('images/common-lr-2.JPG')">
+                        <div class="carousel-item" style="background-image: url('images/compressed/gallery-villa-4.JPG');" onclick="openImage('images/compressed/gallery-villa-4.JPG')">
                         </div>
-                        <div class="carousel-item" style="background-image: url('images/common-k.JPG');" onclick="openImage('images/common-k.JPG')">
+                        <div class="carousel-item" style="background-image: url('images/compressed/premium.JPG');" onclick="openImage('images/compressed/premium.JPG')">
                         </div>
                         </div>
                         <!-- <a class="carousel-control-prev" href="#carouselVillaRoomIndicators" role="button" data-slide="prev">

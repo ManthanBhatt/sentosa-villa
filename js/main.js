@@ -50,6 +50,10 @@ let goToRoom = () => {
     window.location.href = "room.html";
 }
 
+let goToGallery = () => {
+    window.location.href = "gallery.html";
+}
+
 let openImage = (src) => {
     $.magnificPopup.open({
         items: {
