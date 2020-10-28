@@ -126,7 +126,7 @@ let saveEnquiry = () => {
     $('#spinner-grow').show();
     $.ajax({
         type: "POST",
-        url: "http://localhost/sentosa_villa/service/mail-service.php",
+        url: "http://www.thesentosavilla.com/service/mail-service.php",
         data: JSON.stringify({
             name,
             email,
@@ -205,7 +205,7 @@ let saveContactForm = () => {
     $('#spinner-grow').show();
     $.ajax({
         type: "POST",
-        url: "http://localhost/sentosa_villa/service/mail-service.php",
+        url: "http://www.thesentosavilla.com/service/mail-service.php",
         data: JSON.stringify({
             name,
             email,
