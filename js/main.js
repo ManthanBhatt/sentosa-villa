@@ -6,21 +6,17 @@ $(document).keydown(function (event) {
     }
 });
 
-$(document).on("contextmenu", function (e) {        
+$(document).on("contextmenu", function (e) {
     e.preventDefault();
 });
 
-document.onreadystatechange = function () {
-    if (document.readyState !== "complete") {
-        document.querySelector("body").style.visibility = "hidden";
-        document.querySelector("#loader").style.visibility = "visible";
-    } else {
-        setTimeout(() => {
-            document.querySelector("#loader").style.display = "none";
-            document.querySelector("body").style.visibility = "visible";
-        }, 500);
-    }
-};
+document.querySelector("body").style.visibility = "hidden";
+document.querySelector("#loader").style.visibility = "visible";
+
+setTimeout(() => {
+    document.querySelector("#loader").style.display = "none";
+    document.querySelector("body").style.visibility = "visible";
+}, 2000);
 
 $(window).scroll(function () {
     if ($(document).scrollTop() > 50) {
